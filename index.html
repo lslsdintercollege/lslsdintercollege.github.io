@@ -18,7 +18,7 @@
 
   .section-heading {
     color: #042346;
-    font-size: 40px; 
+    font-size: 40px;
   }
 
   nav {
@@ -28,7 +28,7 @@
 
   nav .navbar-brand {
     color: darkblue;
-    
+
   }
 
   .navbar-nav .nav-link {
@@ -39,9 +39,9 @@
 
   li a {
     border-radius: 4px;
-   background: #badc58;
-   margin-left: 5px;
-   width: 130px;
+    background: #badc58;
+    margin-left: 5px;
+    width: 130px;
   }
 
   li a:hover {
@@ -52,14 +52,16 @@
   .navbar-toggler {
     padding: none;
     outline: none;
-    
+
   }
-.navbar-toggler :hover{
- box-shadow: 10px;
-}
+
+  .navbar-toggler :hover {
+    box-shadow: 10px;
+  }
+
   .welcome {
     height: 611px;
-    
+
   }
 
   .content {
@@ -99,25 +101,30 @@
     padding: 10px;
     margin: 4px;
     border-radius: 30px;
-    font-family: 'Lobster', cursive; 
+    font-family: 'Lobster', cursive;
     font-size: 30px;
-    
+
   }
 
   .class {
     padding: 10px;
   }
-   .faculty img{
+
+  .faculty img {
     height: 200px;
     width: 200px;
-    
+
     padding: 20px;
-   }
-   
+  }
+
   .shadow {
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 20px;
     background-color: #fd9644;
+  }
+
+  .points {
+    align-items: center;
   }
 
   .photo {
@@ -125,19 +132,24 @@
     width: 100px;
     border-radius: 5px;
   }
-  .card{
+
+  .card {
     background-color: #fd9644;
   }
+
   .card img {
     height: 200px;
   }
-  .map{
+
+  .map {
     height: 335px;
     width: 100%;
   }
-  .lab{
+
+  .lab {
     height: 250px;
   }
+
   @media(max-width: 768px) {
     .header-display {
       display: none;
@@ -150,222 +162,311 @@
     }
   }
 
-  
+
   @media(max-width: 577px) {
-    .line{
+    .line {
       font-size: 15px;
       position: absolute;
       bottom: 417px;
       right: 20px;
     }
 
-    .intro{
+    .intro {
       font-size: 20px;
       position: relative;
       bottom: 470px;
     }
-    .content{
+
+    .content {
       font-size: 30px;
       position: relative;
       bottom: 1500px;
     }
+
     .section-heading {
-   
-    font-size: 30px; 
+
+      font-size: 30px;
+    }
+
+    .value ul li {
+      font-size: 15px;
+    }
+
+    .points {
+      position: relative;
+      right: 14px;
+
+    }
   }
-  .value ul li{
-    font-size: 15px;
+
+  #more {
+    display: none;
   }
-    .points{
-   position: relative;
-   right: 14px;
-  
+  span{
+    padding: 25px;
   }
-  
+ 
 </style>
 
 <body>
-  
 
 
-    <div class="container-fluid background" style="background-color: #badc58;" id="home">
-      
-            <img src="img/background2.webp" class="w-100  mt-5 justify-content-center" alt="" />
-            <div class="text-center carousel-caption">
-        <h1  class="intro">Welcome to LSL SD Inter College</h1>
 
-        <h3 class="line">शिक्षार्थ आइये सेवार्थ जाइए<br>
-          come for education go for service</h3>
-        
+  <div class="container-fluid background" style="background-color: #badc58;" id="home">
+
+    <img src="img/background2.webp" class="w-100  mt-5 justify-content-center" alt="" />
+    <div class="text-center carousel-caption">
+      <h1 class="intro">Welcome to LSL SD Inter College</h1>
+
+      <h3 class="line">शिक्षार्थ आइये सेवार्थ जाइए<br>
+        come for education go for service</h3>
+
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">SCHOOL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0" style="font-family: 'Josefin Sans', sans-serif;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#homes">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#faculty">Faculties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#facility">Facilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">Contact us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    
+    </nav>
+    <div class="back-video">
+      <video autoplay loop muted plays-inline class="video">
+        <source src="img/VID-20220814-WA0000.mp4" type="video/mp4">
+      </video>
 
-      <nav class="navbar navbar-expand-lg fixed-top">
+    </div>
+    <main id="main">
+      <div class="about mt-5">
         <div class="container">
-          <a class="navbar-brand fw-bold" href="#">SCHOOL</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0" style="font-family: 'Josefin Sans', sans-serif;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#homes">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#faculty">Faculties</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#facility">Facilities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#gallery">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#contact">Contact us</a>
-              </li>
+          <h2 class="h2-responsive section-heading fw-bold text-center my-2" id="about">About</h2>
+          <div class="row pt-5">
+            <div class="col-md-6 align-items-stretch">
+              <img class="img-fluid" src="img/building.JPG" alt="">
+            </div>
+            <div class="col-md-6">
+              <h2 class="h2-responsive fw-bold text-start">Our School</h2>
+              <p style="font-family: 'Bitter', serif; font-size: 18px;">लाला सुख लाल सनातन धर्म इंटर कॉलेज में आपका
+                हार्दिक स्वागत है। यह वह जगह है जहां बच्चों को बेहतर शिक्षा मिलती है।
+                हमारे स्कूल के बारे में कुछ बहुत खास है; हर कोई जो हमारे स्कूल से गुजरता है, वह देखता है कि हमारे बच्चे
+                कितने अद्भुत हैं।वे सुंदर व्यवहार, शिष्ट और आकांक्षी हैं।
+                हमारा समुदाय हमारे बच्चों को सर्वोत्तम शिक्षा देने के प्रयासों का समर्थन करता है,<span
+                  id="dots">...</span><span id="more"> जो हम अकादमिक उत्कृष्टता, सामाजिक बुद्धिमत्ता और नैतिक जीवन के
+                  अपने मूल्यों के माध्यम से करते हैं।
+                  हमारे कर्मचारी मेहनती हैं और हमारे स्कूल में बच्चों के लिए प्रतिबद्ध हैं। एक शोध-सूचित स्कूल के रूप
+                  में, हम निरंतर व्यावसायिक विकास को महत्व देते हैं और इसमें निवेश करते हैं ताकि हम अपने बच्चों को
+                  सर्वश्रेष्ठ दे सकें।
+                  एसडी में हमारा मिशन है: हमारे बच्चे क्या हासिल कर सकते हैं इसकी कोई सीमा नहीं है।</span></p>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="value">
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6  justify-content-center">
+            <h3 class="h3-responsive section-heading fw-bold text-center my-2">Value</h3>
+            <ul class="text-center text-white mt-4 align-items-center points">
+              <li>सीखना और सहायता</li>
+              <li>सम्मान और करुणा</li>
+              <li>साहस और ईमानदारी</li>
+              <li>सेवा और योगदान</li>
+            </ul>
+          </div>
+          <div class="col-md-6  justify-content-center">
+            <h3 class="h3-responsive section-heading fw-bold text-center my-2">Our key points</h3>
+            <ul class="text-center text-white mt-4 align-items-center points">
+              <li>प्रेरित करना</li>
+              <li>जुनूनी</li>
+              <li>ईमानदारी</li>
+              <li>शिष्ट</li>
             </ul>
           </div>
         </div>
-      </nav>
-      <div class="back-video">
-        <video autoplay loop muted plays-inline class="video">
-          <source src="img/VID-20220814-WA0000.mp4" type="video/mp4">
-        </video>
-        
       </div>
-      <main id="main">
-        <div class="about mt-5">
-          <div class="container">
-            <h2 class="h2-responsive section-heading fw-bold text-center my-2" id="about">About</h2>
-            <div class="row pt-5">
-              <div class="col-md-6 align-items-stretch">
-                <img class="img-fluid" src="img/building.JPG" alt="">
-              </div>
-              <div class="col-md-6">
-                <h2 class="h2-responsive fw-bold text-start">Our School</h2>
-                <p style="font-family: 'Bitter', serif; font-size: 18px;">लाला सुख लाल सनातन धर्म इंटर कॉलेज में आपका हार्दिक स्वागत है। यह वह जगह है जहां बच्चों को बेहतर शिक्षा मिलती है।
-                  हमारे स्कूल के बारे में कुछ बहुत खास है; हर कोई जो हमारे स्कूल से गुजरता है, वह देखता है कि हमारे बच्चे कितने अद्भुत हैं।वे सुंदर व्यवहार, शिष्ट और आकांक्षी हैं। </p>
-                <p style="font-family: 'Bitter', serif; font-size: 18px;">हमारा समुदाय हमारे बच्चों को सर्वोत्तम शिक्षा देने के प्रयासों का समर्थन करता है, जो हम अकादमिक उत्कृष्टता, सामाजिक बुद्धिमत्ता और नैतिक जीवन के अपने मूल्यों के माध्यम से करते हैं।
-                  हमारे कर्मचारी मेहनती हैं और हमारे स्कूल में बच्चों के लिए प्रतिबद्ध हैं। एक शोध-सूचित स्कूल के रूप में, हम निरंतर व्यावसायिक विकास को महत्व देते हैं और इसमें निवेश करते हैं ताकि हम अपने बच्चों को सर्वश्रेष्ठ दे सकें।
-                  एसडी में हमारा मिशन है: हमारे बच्चे क्या हासिल कर सकते हैं इसकी कोई सीमा नहीं है।</p>
-                <a href="" class="btn btn-primary px-2 pl-2">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      
-      <div class="value">
 
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-md-6  justify-content-center">
-              <h3 class="h3-responsive section-heading fw-bold text-center my-2">Value</h3>
-              <ul class="text-center text-white mt-4 align-items-center points">
-               <li>सीखना और सहायता</li>
-                <li>सम्मान और करुणा</li>
-                <li>साहस और ईमानदारी</li>
-                <li>सेवा और योगदान</li>
-              </ul>
-            </div>
-            <div class="col-md-6  justify-content-center">
-              <h3 class="h3-responsive section-heading fw-bold text-center my-2">Our key points</h3>
-              <ul class="text-center text-white mt-4 align-items-center points">
-                <li>प्रेरित करना</li>
-                <li>जुनूनी</li>
-                <li>ईमानदारी</li>
-                <li>शिष्ट</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    </div>
+    <div class="motto">
 
-      </div>
-      <div class="motto">
-
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="h2-responsive section-heading fw-bold text-center my-2">Our motive</h2>
-              <p class="mt-4"><p class="mt-4">हमारी प्रेरणा को चार गुणों द्वारा परिभाषित किया जा सकता है: पसंद, प्रेरित छात्र दूसरों के बजाय कुछ गतिविधियों को करने का विकल्प चुनते हैं।ऊर्जा, प्रेरित छात्र उच्च ऊर्जा का निवेश करते हैं, जो गतिविधियों में भागीदारी, उत्साह और रुचि की विशेषता है।मानक, प्रेरित छात्र गतिविधियों में उच्च व्यक्तिगत मानकों की तलाश करते हैं।निरंतर प्रेरणा, प्रेरित छात्र स्वेच्छा से, बार-बार गतिविधियों में लौटते हैं, क्योंकि वे उनके माध्यम से आनंद लेते हैं और पुरस्कृत महसूस करते हैं।</p>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="h2-responsive section-heading fw-bold text-center my-2 mb-4">
-              Equality Information and Objectives </h2>
-            <ul>
-              <li>शिक्षा में समानता का अर्थ है कि सभी छात्रों को समान संसाधन, सामग्री, पाठ्यक्रम, सुविधाएं प्राप्त हों।</li>
-              <li>हम अपने सभी विद्यार्थियों के समान मानवाधिकारों का सम्मान करते हैं और उन्हें समानता के मुद्दों के बारे में शिक्षित करते हैं।</li>
-              <li>हम अपने स्टाफ़ और स्कूल समुदाय के अन्य सदस्यों के समान अधिकारों का सम्मान करते हैं।</li>
-            </ul>
+            <h2 class="h2-responsive section-heading fw-bold text-center my-2">Our motive</h2>
+            <p class="mt-4">हमारी प्रेरणा को चार गुणों द्वारा परिभाषित किया जा सकता है: पसंद, प्रेरित छात्र दूसरों के
+              बजाय कुछ गतिविधियों को करने का विकल्प चुनते हैं।ऊर्जा, प्रेरित छात्र उच्च ऊर्जा का निवेश करते हैं, जो
+              गतिविधियों में भागीदारी, उत्साह और रुचि की विशेषता है।मानक, प्रेरित छात्र गतिविधियों में उच्च व्यक्तिगत
+              मानकों की तलाश करते हैं।निरंतर प्रेरणा, प्रेरित छात्र स्वेच्छा से, बार-बार गतिविधियों में लौटते हैं,
+              क्योंकि वे उनके माध्यम से आनंद लेते हैं और पुरस्कृत महसूस करते हैं।</p>
           </div>
         </div>
       </div>
-      <div class="faculties">
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="h2-responsive section-heading fw-bold text-center my-2 mb-4">
+            Equality Information and Objectives </h2>
+          <ul>
+            <li>शिक्षा में समानता का अर्थ है कि सभी छात्रों को समान संसाधन, सामग्री, पाठ्यक्रम, सुविधाएं प्राप्त हों।
+            </li>
+            <li>हम अपने सभी विद्यार्थियों के समान मानवाधिकारों का सम्मान करते हैं और उन्हें समानता के मुद्दों के बारे
+              में शिक्षित करते हैं।</li>
+            <li>हम अपने स्टाफ़ और स्कूल समुदाय के अन्य सदस्यों के समान अधिकारों का सम्मान करते हैं।</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="faculties">
 
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="h2-responsive section-heading fw-bold text-center my-2" >Our Managrment Team</h2>
-              <div class="row mt-4 ms-5">
-                <div class="col-lg-4 col-md-12 mt-3 align-items-center">
-                  <div class="card" style="width:200px">
-                    <img class="card-img-top" src="img/keshodas.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                      <h4 class="card-title">Keshodas</h4><br>
-                      <p class="card-text">Founder</p>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4  col-md-12 mt-3 align-items-center">
-                  <div class="card" style="width:200px">
-                    <img class="card-img-top" src="img/sundar.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                      <h4 class="card-title">Mr. Shyam Sundar</h4>
-                      <p class="card-text">Manager</p>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4  col-md-12 mt-3 align-items-center">
-                  <div class="card" style="width:200px">
-                    <img class="card-img-top" src="img/principal.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                      <h4 class="card-title">Mr. Devendra Kumar</h4>
-                      <p class="card-text">Principal</p>
-                      
-                    </div>
-                  </div>
-                </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="h2-responsive section-heading fw-bold text-center my-2">Our Managrment Team</h2>
+            <div class="row mt-4 ms-5">
+              <div class="col-lg-4 col-md-12 mt-3 align-items-center">
+                <div class="card" style="width:200px">
+                  <img class="card-img-top" src="img/keshodas.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Keshodas</h4><br>
+                    <p class="card-text">Founder</p>
 
+                  </div>
+                </div>
               </div>
+              <div class="col-lg-4  col-md-12 mt-3 align-items-center">
+                <div class="card" style="width:200px">
+                  <img class="card-img-top" src="img/sundar.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Mr. Shyam Sundar</h4>
+                    <p class="card-text">Manager</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4  col-md-12 mt-3 align-items-center">
+                <div class="card" style="width:200px">
+                  <img class="card-img-top" src="img/principal.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Mr. Devendra Kumar</h4>
+                    <p class="card-text">Principal</p>
+
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-      <div class="faculty" id="faculty">
-        <div class="row mt-5">
+    </div>
+    <div class="faculties">
+
+      <div class="container mt-5">
+        <div class="row">
           <div class="col-md-12">
-            <!-- <h2 class="h2-responsive section-heading fw-bold text-center my-2" id="facility">Faculties</h2>
-            <div class="row">
-              <div class="col-md-3 text-center"><img src="/img/faculty.png" alt=""><h5>Name</h5></div>
-              <div class="col-md-3 text-center"><img src="/img/faculty.png" alt=""><h5>Name</h5></div>
-              <div class="col-md-3 text-center"><img src="/img/faculty.png" alt=""><h5>Name</h5></div>
-              <div class="col-md-3 text-center"><img src="/img/faculty.png" alt=""><h5>Name</h5></div>
-            </div> -->
-            <!-- <h2>Striped Rows</h2>
-  <p>The .table-striped class adds zebra-stripes to a table:</p>            
-  <table class="table table-striped">
+            <h2 class="h2-responsive section-heading fw-bold text-center my-2">Faculties</h2>
+            <div class="row mt-4 ms-5">
+             <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+              <div class="card">
+                <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Dheeraj Garg <br> Speciality :- Math, Science</div>
+              </div>
+             </div>
+             <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+              <div class="card">
+                <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Archna <br> Speciality :- Hindi <br> <br></div>
+              </div>
+             </div>
+             <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+              <div class="card">
+                <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Shyam Singh <br> Speciality :- Biology <br> <br></div>
+              </div>
+             </div>
+             <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+              <div class="card">
+                <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Anil Choudhary <br> Speciality :- Chemistry</div>
+              </div>
+             </div>
+          </div>
+          <div class="row mt-4 ms-5">
+            <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+             <div class="card">
+               <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Sanjeev<br> Speciality :- Physics</div>
+             </div>
+            </div>
+            <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+             <div class="card">
+               <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Sakshi <br> Speciality :- Hindi, Social Science <br> <br></div>
+             </div>
+            </div>
+            <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+             <div class="card">
+               <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Reena Sharma <br> Speciality :- Hindi, Social Science <br> <br></div>
+             </div>
+            </div>
+            <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+             <div class="card">
+               <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Rajneesh Tyagi<br> Speciality :- English</div>
+             </div>
+            </div>
+         </div>
+         <div class="row mt-4 ms-5">
+          <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+           <div class="card">
+             <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- <br> Speciality :- Math, Science</div>
+           </div>
+          </div>
+          <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+           <div class="card">
+             <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Archna <br> Speciality :- Hindi <br> <br></div>
+           </div>
+          </div>
+          <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+           <div class="card">
+             <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Shyam Singh <br> Speciality :- Biology <br> <br></div>
+           </div>
+          </div>
+          <div class="col-lg-3 col-md-12 mt-3 align-items-center">
+           <div class="card">
+             <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Name :- Anil Choudhary <br> Speciality :- Chemistry</div>
+           </div>
+          </div>
+       </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <h2>Striped Rows</h2>
+    <p>The .table-striped class adds zebra-stripes to a table:</p>            
+    <table class="table table-striped">
     <thead>
       <tr>
         <th>Firstname</th>
@@ -390,258 +491,359 @@
         <td>july@example.com</td>
       </tr>
     </tbody>
-  </table>
+   </table>
           </div>
         </div>
       </div> -->
-      <div class="facility" id="facility">
+    <div class="facility" id="facility">
 
-        <div class="container mt-5">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="h2-responsive section-heading fw-bold text-center my-2" id="facility">Facilities</h2>
+
+            <div class="row mt-5 shadow">
+              <div class="col-md-4">
+                <img class="float-left p-4  w-100 lab" src="img/bio.jpg" alt="">
+              </div>
+              <div class="col-md-8">
+                <h3 class="mt-4 text-center"><i class="fa fa-dna"> </i><span> जीव विज्ञान प्रयोगशाला </span>
+                  <i class="fa fa-dna"></i>
+                </h3>
+                <p class="ms-1 mt-3">सामान्य तौर पर, जीव विज्ञान प्रयोगशाला एक कमरा है जहां जैविक अध्ययन, विश्लेषण
+                  और प्रयोग किए जाते हैं।
+              </div>
+            </div>
+            <div class="row mt-5 shadow">
+              <div class="col-md-4">
+                <img class="float-left p-4 w-100 lab" src="img/chemistry.jpg" alt="">
+              </div>
+              <div class="col-md-8">
+                <h5 class="mt-4 text-center"><i class="fa-solid fa-flask-vial"></i><span>रसायन विज्ञान प्रयोगशाला</span>
+                  <i class="fa-solid fa-flask-vial"></i></h5>
+                <p class="ms-1 mt-3">इस प्रयोगशाला में तरल और ठोस नमूनों के विभिन्न विश्लेषणों के लिए नमूने और
+                  मानक तैयार करने के लिए सभी आवश्यक उपकरण हैं। प्रयोगशाला में कांच के बर्तन, फ्यूम हुड, मफल
+                  फर्नेस, सेंट्रीफ्यूज, एग्रीगेट मिल और ओवन सहित पारंपरिक उपकरण हैं।
+              </div>
+            </div>
+            <div class="row mt-5 shadow">
+              <div class="col-md-4">
+                <img class="float-left p-4 lab w-100" src="img/physics.jpg" alt="">
+              </div>
+              <div class="col-md-8">
+                <h3 class="mt-4 text-center"><i class="fa-solid fa-lightbulb"></i><span>भौतिक विज्ञान प्रयोगशाला</span>
+                  <i class="fa-solid fa-lightbulb"></i></h3>
+                <p class="ms-1 mt-3">भौतिकी प्रयोगशाला वह स्थान है जहाँ भौतिकी के प्रयोग किए जाते हैं। जैसा कि हम
+                  जानते हैं कि भौतिकी विज्ञान की वह शाखा है जहाँ प्रयोग करना मूल विषय का एक अभिन्न अंग है। लगभग हर
+                  शैक्षणिक संस्थान में ये भौतिकी प्रयोगशालाएँ पाई जाती हैं।
+              </div>
+            </div>
+
+            <div class="row mt-5 shadow">
+              <div class="col-md-4">
+                <img class="float-left p-4  w-100 lab" src="img/bio.jpg" alt="">
+              </div>
+              <div class="col-md-8">
+                <h3 class="mt-4 text-center"><i class="fas fa-toilet"> </i><span>सुव्यवस्थित शौचालय</span>
+                  <i class="fas fa-toilet"></i></h3>
+                <p class="ms-1 mt-3">विद्यालय परिसर में पर्याप्त शौचालय सुविधाओं का बहुत महत्व है और उनका निर्माण
+                  नामांकित छात्रों की संख्या के अनुसार किया जाना चाहिए। 21वीं सदी में, कई स्कूलों में अभी भी
+                  पर्याप्त बुनियादी ढांचा नहीं है जो छात्रों के समग्र विकास में बाधा डालता है। बैक्टीरिया और संक्रमण
+                  से बचने के लिए शौचालयों की नियमित सफाई और धुलाई आवश्यक है।
+              </div>
+            </div>
+
+            <div class="row mt-5 shadow">
+              <div class="col-md-4">
+                <img class="float-left p-4  w-100 lab" src="img/bio.jpg" alt="">
+              </div>
+              <div class="col-md-8">
+                <h3 class="mt-4 text-center"><i class="fa-solid fa-person-shelter"></i><span> कक्षाओं का स्थान और आकार</span>
+                  <i class="fa-solid fa-person-shelter"></i></h3>
+                <p class="ms-1 mt-3">भीड़भाड़ वाली कक्षाओं में अक्सर छात्रों की व्यस्तता और अनुचित शिक्षा में कमी
+                  आती है। शिक्षकों को भी भीड़भाड़ वाली कक्षा का प्रबंधन करने में कठिनाई होती है। प्रत्येक छात्र
+                  आवश्यक ध्यान प्राप्त करने में सक्षम नहीं है। इसलिए, प्रत्येक कक्षा में छात्रों की मध्यम संख्या
+                  होनी चाहिए। इसके अतिरिक्त, यह छात्रों के लिए पर्याप्त और व्यक्तिगत स्थान प्रदान करने के लिए
+                  पर्याप्त विस्तृत होना चाहिए
+              </div>
+            </div>
+
+            <div class="row mt-5 shadow">
+              <div class="col-md-4">
+                <img class="float-left p-4  w-100 lab" src="img/bio.jpg" alt="">
+              </div>
+              <div class="col-md-8">
+                <h3 class="mt-4 text-center"><i class="fa fa-futbol-o" aria-hidden="true"></i><span>खेल के मैदान और खेल सुविधाएं</span>
+                  <i class="fa fa-futbol-o" aria-hidden="true"></i></h3>
+                <p class="ms-1 mt-3">शारीरिक और मानसिक स्वास्थ्य में सुधार के लिए, खेल सुविधाएं सबसे महत्वपूर्ण पहलू
+                  हैं जिन पर माता-पिता को अपने बच्चों को किसी भी स्कूल में प्रवेश देने से पहले विचार करना चाहिए।
+
+                  कई स्कूलों में छात्रों के लिए खेल के मैदानों के लिए पर्याप्त जगह उपलब्ध कराने की कमी है। हालाँकि,
+                  बास्केटबॉल कोर्ट, टेबल टेनिस टेबल और बैडमिंटन जैसी सुविधाएं आज के युग में आवश्यक हैं जब खेल
+                  छात्रों के जीवन में एक प्रमुख भूमिका निभाते हैं। स्कूलों में कम से कम एक बाहरी खेल के लिए बुनियादी
+                  ढांचा होना चाहिए और माता-पिता को अपने बच्चों को नामांकित करने से पहले इस पर विचार करना चाहिए।
+                  क्रिकेट नेट प्रदान करना भी एक अच्छा विकल्प है क्योंकि छात्र इस खेल के दीवाने हैं और यह लागत
+                  प्रभावी है।
+
+              </div>
+            </div>
+
+            <div class="row mt-5 shadow">
+              <div class="col-md-4">
+                <img class="float-left p-4  w-100 lab" src="img/bio.jpg" alt="">
+              </div>
+              <div class="col-md-8">
+                <h3 class="mt-4 text-center"><i class="fa fa-lightbulb-o" aria-hidden="true"></i><span>सुविधाएं</span>
+                  <i class="fa fa-lightbulb-o" aria-hidden="true"></i></h3>
+                <p class="ms-1 mt-3">एक अंतरराष्ट्रीय अध्ययन के अनुसार, जो छात्र कक्षा में प्राकृतिक दिन के उजाले के
+                  संपर्क में आते हैं, उनमें सीखने की क्षमता को ग्रहण करने की अधिक एकाग्रता शक्ति होती है। यह छात्रों
+                  और शिक्षकों के मनोबल को बढ़ाता है जिसके परिणामस्वरूप गुणवत्तापूर्ण शिक्षा मिलती है। इस प्रकार,
+                  स्कूलों को प्राकृतिक प्रकाश तक उचित पहुँच होनी चाहिए और कृत्रिम रोशनी से बचना चाहिए।
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <main id="main">
+      <div class="contact mt-5">
+        <div class="container">
+          <h2 class="h2-responsive section-heading fw-bold text-center my-2" id="gallery">Gallery</h2>
+          <!-- Gallery -->
           <div class="row">
-            <div class="col-md-12">
-              <h2 class="h2-responsive section-heading fw-bold text-center my-2" id="facility">Facilities</h2>
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <img src="img/school2.jpg" class="w-100 shadow-1-strong mb-4 photo  justify-content-center" alt="" />
 
-              <div class="row mt-5 shadow">
-                <div class="col-md-4">
-                  <img class="float-left p-4  w-100 lab" src="img/bio.jpg" alt="" >
-                </div>
-                <div class="col-md-8">
-                  <h3 class="mt-4 text-center"><i class="fa fa-dna"></i>जीव विज्ञान प्रयोगशालाा<i class="fa fa-dna"></i></h3>
-                  <p class="ms-1 mt-3">सामान्य तौर पर, जीव विज्ञान प्रयोगशाला एक कमरा है जहां जैविक अध्ययन, विश्लेषण और प्रयोग किए जाते हैं।</div>
-              </div>
-              <div class="row mt-5 shadow">
-                <div class="col-md-4">
-                  <img class="float-left p-4 w-100 lab" src="img/chemistry.jpg" alt="" >
-                </div>
-                <div class="col-md-8">
-                  <h5 class="mt-4 text-center"><i class="fa-solid fa-flask-vial"></i>रसायन विज्ञान प्रयोगशाला<i class="fa-solid fa-flask-vial"></i></h5>
-                  <p class="ms-1 mt-3">इस प्रयोगशाला में तरल और ठोस नमूनों के विभिन्न विश्लेषणों के लिए नमूने और मानक तैयार करने के लिए सभी आवश्यक उपकरण हैं। प्रयोगशाला में कांच के बर्तन, फ्यूम हुड, मफल फर्नेस, सेंट्रीफ्यूज, एग्रीगेट मिल और ओवन सहित पारंपरिक उपकरण हैं।</div>
-              </div>
-              <div class="row mt-5 shadow">
-                <div class="col-md-4">
-                  <img class="float-left p-4 lab w-100" src="img/physics.jpg" alt="" >
-                </div>
-                <div class="col-md-8">
-                  <h3 class="mt-4 text-center"><i class="fa-solid fa-lightbulb"></i>भौतिक विज्ञान प्रयोगशाला<i class="fa-solid fa-lightbulb"></i></h3>
-                  <p class="ms-1 mt-3">भौतिकी प्रयोगशाला वह स्थान है जहाँ भौतिकी के प्रयोग किए जाते हैं। जैसा कि हम जानते हैं कि भौतिकी विज्ञान की वह शाखा है जहाँ प्रयोग करना मूल विषय का एक अभिन्न अंग है। लगभग हर शैक्षणिक संस्थान में ये भौतिकी प्रयोगशालाएँ पाई जाती हैं।</div>
-              </div>
+              <img src="img/shcool3.jpg" class="w-100 shadow-1-strong mb-4 photo  justify-content-center" alt="" />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img src="img/shcool5.jpg" class="w-100 shadow-1-strong mb-4 photo  justify-content-center" alt="" />
+
+              <img src="img/shcool4.jpg" class="w-100 shadow-1-strong mb-4 photo justify-content-center" alt="" />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img src="img/school1.jpg" class="w-100 shadow-1-strong mb-4 photo  justify-content-center" alt="" />
+
+              <img src="img/bio.jpg" class="w-100 shadow-1-strong mb-4 photo justify-content-center" alt="" />
             </div>
           </div>
 
         </div>
       </div>
-      <main id="main">
-        <div class="contact mt-5">
-          <div class="container">
-            <h2 class="h2-responsive section-heading fw-bold text-center my-2" id="gallery">Gallery</h2>
-            <!-- Gallery -->
-            <div class="row">
-              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img
-                  src="img/school2.jpg"
-                  class="w-100 shadow-1-strong mb-4 photo  justify-content-center" alt="" />
+    </main>
+    <div class="faculties">
 
-                <img src="img/shcool3.jpg" class="w-100 shadow-1-strong mb-4 photo  justify-content-center" alt="" />
-              </div>
-
-              <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="img/shcool5.jpg" class="w-100 shadow-1-strong mb-4 photo  justify-content-center" alt="" />
-
-                <img src="img/shcool4.jpg" class="w-100 shadow-1-strong mb-4 photo justify-content-center" alt="" />
-              </div>
-
-              <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="img/school1.jpg" class="w-100 shadow-1-strong mb-4 photo  justify-content-center" alt="" />
-
-                <img src="img/bio.jpg" class="w-100 shadow-1-strong mb-4 photo justify-content-center" alt="" />
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </main>
-      <main id="main">
-        <div class="contact mt-5">
-          <div class="container">
-            <h2 class="h2-responsive section-heading fw-bold text-center my-2" id="contact">Contact us</h2>
-            <div class="row pt-5">
-             
-              <section class="mb-4">
-
-
-
-                <div class="row mt-5">
-
-                  
-                  <div class=" col-md-12 col-lg-6 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                      
-                      <div class="row">
-
-                        
-                        <div class="col-md-6">
-                          <div class="md-form mb-0">
-                            <label for="name" class="">Your name</label>
-                            <input type="text" id="name" name="name" your name placeholder="" class="form-control">
-
-                          </div>
-                        </div>
-                       
-                        <div class="col-md-6">
-                          <div class="md-form mb-0">
-                            <label for="email" class="">Your email</label>
-                            <input type="text" id="email" name="email" placeholder="email" class="form-control">
-
-                          </div>
-                        </div>
-                        <!--Grid column-->
-
-                      </div>
-                      <!--Grid row-->
-
-                      <!--Grid row-->
-                      <div class="row">
-                        <div class="col-md-12 pt-3">
-                          <div class="md-form mb-0">
-                            <label for="subject" class="">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="subject" class="form-control">
-
-                          </div>
-                        </div>
-                      </div>
-                      <!--Grid row-->
-
-                      <!--Grid row-->
-                      <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-12 pt-3">
-
-                          <div class="md-form">
-                            <label for="message">Your message</label>
-                            <textarea type="text" id="message" name="message" placeholder="message" rows="5"
-                              class="form-control md-textarea"></textarea>
-
-                          </div>
-
-                        </div>
-                      </div>
-                      <!--Grid row-->
-
-                    </form>
-
-                    <div class="text-center text-md-left mt-3">
-                      <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                    </div>
-                    
-                  </div>
-                  <!--Grid column-->
-                  <div class="col-md-12 col-lg-6">
-                    <iframe class="map p-1  img-responsive"
-                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13868.909863541689!2d77.84573974999999!3d29.655173049999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1671447099160!5m2!1sen!2sin"
-                     allowfullscreen="" loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="h2-responsive section-heading fw-bold text-center my-2">Our School 10<sup>th</sup> Topers in 2022</h2>
+            <!-- <h2 class="text-center h2-responsive section-heading my-2 fw-bold ">10<sup>th</sup></h2> -->
+            <div class="row mt-4 ms-5">
+              <div class="col-lg-4 col-md-12 mt-3 align-items-center">
+                <div class="card">
+                  <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Jyoti <br> 88%</div>
                 </div>
+              </div>
+              <div class="col-lg-4  col-md-12 mt-3 align-items-center">
+                <div class="card">
+                  <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Summya <br> 86%</div>
+                </div>
+              </div>
+              <div class="col-lg-4  col-md-12 mt-3 align-items-center">
+                <div class="card">
+                  <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Rashi Joshi <br> 84%</div>
+                </div>
+              </div>
 
-              </section>
-              <!--Section: Contact v.2-->
             </div>
           </div>
         </div>
-      </main>
-      <!-- Footer -->
-      <footer class="text-center text-lg-start bg-primary text-white pt-2">
-
-        <!-- Section: Links  -->
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fa fa-home me-3"></i>School
-                </h6>
-                <p>
-                  Here you can use rows and columns to organize your footer content. Lorem ipsum
-                  dolor sit amet, consectetur adipisicing elit.
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Products
-                </h6>
-                <p>
-                  <a href="#!" class="text-reset">Home</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">About</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Gallery</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Contact us</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Useful links
-                </h6>
-                <p>
-                  <a href="#!" class="text-reset">Pricing</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Settings</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Orders</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Help</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p><i class="fa fa-home me-3"></i> GT Road, Purkazi </p>
-                <p>
-                  <i class="fa fa-envelope me-3"></i>
-                  info@example.com
-                </p>
-                <p><i class="fa fa-phone me-3"></i> + 01 234 567 88</p>
-                <p><i class="fa fa-print me-3"></i> + 01 234 567 89</p>
-              </div>
-              <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-          </div>
-        </section>
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2022 Copyright:
-          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">web developer</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
+      </div>
     </div>
+    <div class="faculties">
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <h2 class="h2-responsive section-heading fw-bold text-center my-2">Our School 12<sup>th</sup> Topers in 2022</h2> -->
+            <!-- <h2 class="text-center h2-responsive section-heading my-2 fw-bold ">12<sup>th</sup></h2> -->
+            <!-- <div class="row mt-4 ms-5">
+              <div class="col-lg-4 col-md-12 mt-3 align-items-center">
+                <div class="card">
+                  <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Jyoti <br> 88%</div>
+                </div>
+              </div>
+              <div class="col-lg-4  col-md-12 mt-3 align-items-center">
+                <div class="card">
+                  <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Summya <br> 86%</div>
+                </div>
+              </div>
+              <div class="col-lg-4  col-md-12 mt-3 align-items-center">
+                <div class="card">
+                  <div class="card-body" style="background-color: #A3CB38; font-weight: bold; font-size: 20px;">Rashi Joshi <br> 84%</div>
+                </div>
+              </div>
+
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <main id="main">
+      <div class="contact mt-5">
+        <div class="container">
+          <h2 class="h2-responsive section-heading fw-bold text-center my-2" id="contact">Contact us</h2>
+
+          <!--Grid column-->
+          <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <iframe class="map p-1  img-responsive"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13868.909863541689!2d77.84573974999999!3d29.655173049999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1671447099160!5m2!1sen!2sin"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             
+            </div>
+            <div class="col-md-6 col-lg-6  text-center mt-5  ">
+              <!-- <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>  -->
+              <p>
+                <a href="#!" class="text-reset"> <b> Phone <i class="fa fa-phone" aria-hidden="true"></i> :- 12345678901</b></a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset"> <b>  Address <i class="fa fa-address-book-o" aria-hidden="true"></i> :- G.T Road Purkazi</b></a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset"> <b> Mail <i class="fa fa-envelope" aria-hidden="true"></i> :- @gmail.com</b></a>
+                
+              </p>
+              <!-- <p>
+                <a href="#!" class="text-reset">Contact us</a>
+              </p> -->
+            </div>
+            </div>
+</div>
+        </div>
+
+        </section>
+        <!--Section: Contact v.2-->
+      </div>
+  </div>
+  </div>
+  </main>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-primary text-white pt-2">
+
+    <!-- Section: Links  -->
+    <!-- <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <!-- <div class="row mt-3"> -->
+          <!-- Grid column -->
+          <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4"> -->
+            <!-- Content -->
+            <!-- <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fa fa-home me-3"></i>School
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>  -->
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <!-- <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6> 
+            <p>
+              <a href="#!" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">About</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Gallery</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Contact us</a>
+            </p>
+          </div> -->
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <!-- <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div> -->
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <!-- <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <!-- <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fa fa-home me-3"></i> GT Road, Purkazi </p>
+            <p>
+              <i class="fa fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fa fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fa fa-print me-3"></i> + 01 234 567 89</p>
+          </div> -->
+          <!-- Grid column -->
+        <!-- </div> -->
+        <!-- Grid row -->
+      <!-- </div>
+    </section> -->
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">web developer</a>
+    </div>
+    
+  </footer>
+  </div>
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+
+
 </body>
 
 </html>
